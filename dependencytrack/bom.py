@@ -1,16 +1,9 @@
-# Copyright 2020 Alvin Chen sonoma001@gmail.com
 # SPDX-License-Identifier: GPL-2.0+
-
-import logging
 
 from .exceptions import DependencyTrackApiError
 
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-
-
 class Bom:
-    """Class dedicated to all "projects" related endpoints"""
+    """Class dedicated to all "bom" related endpoints"""
 
     def upload_bom(self, file_name, project_id=None, project_name=None, project_version=None, auto_create=False):
         """Upload a supported bill of material format document
