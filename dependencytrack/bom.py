@@ -30,9 +30,3 @@ class Bom:
         else:
             description = f"Unable to upload BOM file"
             raise DependencyTrackApiError(description, response)
-
-
-
-
-
-
